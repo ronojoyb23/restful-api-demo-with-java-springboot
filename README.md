@@ -16,7 +16,7 @@ View of  HAL browser to use APIs
 From Command line/Terminal
 Request:
 ```
-curl -XPOST -H 'Content-Type: application/json' http://localhost:5000/user -d '{
+curl -XPOST -H 'Content-Type: application/json' http://localhost:5000/users -d '{
   "first_name": "John",
   "last_name": "Doe",
   "client_name": "Company Inc."
@@ -37,7 +37,7 @@ HTTP 200
 ### Fetch user by ID
 Request:
 ```
-curl -XGET http://localhost:5000/user/1
+curl -XGET http://localhost:5000/users/1
 ```
 
 Response:
@@ -53,7 +53,7 @@ HTTP 200
 ### Delete user by ID
 Request:
 ```
-curl -XDELETE http://localhost:5000/user/1
+curl -XDELETE http://localhost:5000/users/1
 ```
 
 Response:
