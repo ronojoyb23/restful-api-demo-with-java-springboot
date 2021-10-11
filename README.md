@@ -1,6 +1,8 @@
 # Rest-api-demo-with-springboot
 A simple restful api implementation with spring boot and  persistence of entities using jpa/h2 in mem db
 
+@Entity - user
+
 Import maven project and run app locally
   
 ### Using GUI to Create/Read/Update/Delete a user
@@ -17,9 +19,9 @@ From Command line/Terminal
 Request:
 ```
 curl -XPOST -H 'Content-Type: application/json' http://localhost:5000/users -d '{
-  "first_name": "John",
-  "last_name": "Doe",
-  "client_name": "Company Inc."
+  "lastName": "John",
+  "firstName": "Doe",
+  "companyName": "Company Inc."
 }'
 ```
  
@@ -28,9 +30,9 @@ Response:
 HTTP 200
 {
   "id": 1,
-  "first_name": "John",
-  "last_name": "Doe",
-  "client_name": "Company Inc."
+  "lastName": "John",
+  "firstName": "Doe",
+  "companyName": "Company Inc."
 }
 ```
 
@@ -45,9 +47,9 @@ Response:
 HTTP 200
 {
   "id": 1,
-  "first_name": "Human",
-  "last_name": "Being",
-  "client_name": "Company Inc."
+  "lastName": "John",
+  "firstName": "Doe",
+  "companyName": "Company Inc."
 }
 ```
 ### Delete user by ID
