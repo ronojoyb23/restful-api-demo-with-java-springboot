@@ -4,6 +4,20 @@ A simple restful api implementation with spring boot and  persistence of entitie
 @Entity - user
 
 Import maven project and run app locally
+
+
+to build locally-
+
+```
+mvn clean install from /demo folder
+```
+
+to run-
+
+```
+ java -jar demo-0.0.1-SNAPSHOT.jar
+
+```
   
 ### Using GUI to Create/Read/Update/Delete a user
 Open Chrome - type :  http://localhost:5000/explorer/index.html#uri=/
